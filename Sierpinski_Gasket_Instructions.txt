@@ -1,55 +1,68 @@
-# Sierpinski Gasket (2D and 3D)
 
-## Programmers
-Atuhaire Ambala and RIcardo Escarcega
+---
 
-## Description
+**Project: Sierpinski Gasket (2D and 3D)**
+
+**Description:**
 This project generates both 2D and 3D Sierpinski gaskets using OpenGL. The 2D version creates a Sierpinski triangle, while the 3D version generates a Sierpinski tetrahedron. Both algorithms involve plotting a large number of points using an iterative midpoint calculation between randomly selected vertices.
 
-## Software Requirements
+**Programmers**
+Atuhaire Ambala and Ricardo Escarcega
+
+---
+
+**Software Requirements:**
 - OpenGL (for rendering graphics)
 - GLUT (for windowing and handling input/output in OpenGL)
 - A C++ compiler (e.g., GCC or Clang)
 
-## Installation Instructions
+---
+
+**Installation Instructions:**
+
 1. **Install OpenGL and GLUT:**
    - On Linux (Ubuntu/Debian):
-     ```bash
+     ```
      sudo apt-get install freeglut3-dev
      sudo apt-get install mesa-utils
      ```
    - On macOS (using Homebrew):
-     ```bash
+     ```
      brew install freeglut
      ```
    - On Windows:
      Download and install the latest versions of OpenGL and GLUT from their official websites.
 
 2. **Compile the code:**
-   - For the 2D Sierpinski gasket:
-     ```bash
-     g++ Sierpinski2D.cpp -o sierpinski2d -lGL -lGLU -lglut
-     ```
-   - For the 3D Sierpinski gasket:
-     ```bash
-     g++ Sierpinski3D.cpp -o sierpinski3d -lGL -lGLU -lglut
-     ```
+   For the 2D Sierpinski gasket:
+   ```
+   g++ Sierpinski2D.cpp -o sierpinski2d -lGL -lGLU -lglut
+   ```
+   For the 3D Sierpinski gasket:
+   ```
+   g++ Sierpinski3D.cpp -o sierpinski3d -lGL -lGLU -lglut
+   ```
 
 3. **Run the compiled executable:**
-   - For the 2D version:
-     ```bash
-     ./sierpinski2d
-     ```
-   - For the 3D version:
-     ```bash
-     ./sierpinski3d
-     ```
+   For the 2D version:
+   ```
+   ./sierpinski2d
+   ```
+   For the 3D version:
+   ```
+   ./sierpinski3d
+   ```
 
-## Instructions for Running
+---
+
+**Instructions for Running:**
 - After compiling, simply run the executable in a terminal.
 - The program will open a window and display the Sierpinski gasket (either 2D or 3D).
 - Ensure that OpenGL is properly installed on your system for the program to work.
 
-## Notes
+**Notes:**
 - The 2D version generates a 100,000-point Sierpinski triangle.
 - The 3D version generates a 50,000-point Sierpinski tetrahedron.
+
+---
+
