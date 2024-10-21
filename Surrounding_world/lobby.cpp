@@ -187,7 +187,315 @@ glBegin(GL_POLYGON);  // Start drawing the polygon
 
    
 }
+void rightChair2() {
+    
+                // back cushion //
+    glColor3f(198.0/255.0f, 108.0/255.0f, 71.0/255.0f);  // orange
+    glBegin(GL_POLYGON);  // Start drawing the polygon
+                // l-/r+       u-/d+
+        glVertex2f(3200.0f, 3520.0f);  // Bottom-left vertex
+        glVertex2f(3955.0f, 3600.0f);  // Bottom-right vertex
+        glVertex2f(4000.0f, 2950.0f);  // Top-right vertex
+        glVertex2f(3175.0f, 2900.0f);  // Top-left vertex
+    glEnd();
+    // shadow
+    glColor3f((198.0/255.0f) * 0.9f, (108.0/255.0f) * 0.9f, (71.0/255.0f) * 0.9f);
+    glBegin(GL_POLYGON);  // Start drawing the polygon
+                // l-/r+       u-/d+
+        glVertex2f(3200.0f, 3520.0f);  // Bottom-left vertex
+        glVertex2f(3555.0f, 3600.0f);  // Bottom-right vertex
+        glVertex2f(3250.0f, 3045.0f);  // Top-right vertex
+        glVertex2f(3175.0f, 3000.0f);  // Top-left vertex
+    glEnd();
+// ------------------------------------------------------------ //
+ 
+// ------------------------------------------------------------ //
+                // left side of chair //
+    glColor3f(198.0/255.0f, 108.0/255.0f, 71.0/255.0f);  // orange
+    // lower
+    glBegin(GL_POLYGON);  // Start drawing the polygon
+                // l-/r+       u-/d+
+        glVertex2f(2845.0f, 5000.0f);  // Bottom-left vertex
+        glVertex2f(3010.0f, 5000.0f);  // Bottom-right vertex
+        glVertex2f(3010.0f, 3460.0f);  // Top-right vertex
+        glVertex2f(2830.0f, 3440.0f);  // Top-left vertex
+    glEnd();
+    // upper
+    glBegin(GL_POLYGON);  // Start drawing the polygon
+                // l-/r+       u-/d+
+        glVertex2f(2830.0f, 3445.0f);  // Bottom-left vertex
+        glVertex2f(3010.0f, 3465.0f);  // Bottom-right vertex
+        glVertex2f(3190.0f, 3015.0f);  // Top-right vertex
+        glVertex2f(3075.0f, 2995.0f);  // Top-left vertex
+    glEnd();
+    // side
+    glColor3f((198.0/255.0f) * 0.9f, (108.0/255.0f) * 0.9f, (71.0/255.0f) * 0.9f);  // orange
+    glBegin(GL_POLYGON);  // Start drawing the polygon
+                // l-/r+       u-/d+
+        glVertex2f(3015.0f, 3880.0f);  // Bottom-left vertex
+        glVertex2f(3200.0f, 3520.0f);  // Bottom-right vertex
+        glVertex2f(3190.0f, 3005.0f);  // Top-right vertex
+        glVertex2f(3010.0f, 3460.0f);  // Top-left vertex
+    glEnd();
 
+    // --------------------------------------------------------- //
+
+                    // right side of chair //
+    // lower
+    glColor3f(198.0/255.0f, 108.0/255.0f, 71.0/255.0f);
+    glBegin(GL_POLYGON);  // Start drawing the polygon
+                // l-/r+       u-/d+
+        glVertex2f(3950.0f, 5000.0f);  // Bottom-left vertex
+        glVertex2f(4220.0f, 5000.0f);  // Bottom-right vertex
+        glVertex2f(4265.0f, 3600.0f);  // Top-right vertex
+        glVertex2f(4055.0f, 3600.0f);  // Top-left vertex
+    glEnd();
+    // upper
+    glColor3f(198.0/255.0f, 108.0/255.0f, 71.0/255.0f);  // orange
+    glBegin(GL_POLYGON);  // Start drawing the polygon
+                // l-/r+       u-/d+
+        glVertex2f(4055.0f, 3600.0f);  // Bottom-left vertex
+        glVertex2f(4265.0f, 3600.0f);  // Bottom-right vertex
+        glVertex2f(4155.0f, 3075.0f);  // Top-right vertex
+        glVertex2f(3995.0f, 3050.0f);  // Top-left vertex
+    glEnd();
+
+    // --------------------------------------------------------- //
+
+                        // butt cushion //
+    glColor3f(198.0/255.0f, 108.0/255.0f, 71.0/255.0f);  // orange
+    glBegin(GL_POLYGON);  // Start drawing the polygon
+                // l-/r+       u-/d+
+        glVertex2f(3020.0f, 3880.0f);  // Bottom-left vertex
+        glVertex2f(4020.0f, 4030.0f);  // Bottom-right vertex
+        glVertex2f(3955.0f, 3600.0f);  // Top-right vertex
+        glVertex2f(3200.0f, 3520.0f);  // Top-left vertex
+    glEnd();
+
+    // shadows
+    glColor3f((198.0/255.0f) * 0.9f, (108.0/255.0f) * 0.9f, (71.0/255.0f) * 0.9f);
+    glBegin(GL_POLYGON);  // Start drawing the polygon
+                // l-/r+       u-/d+
+        glVertex2f(3770.0f, 3910.0f);  // Bottom-left vertex
+        glVertex2f(4020.0f, 4030.0f);  // Bottom-right vertex
+        glVertex2f(3955.0f, 3620.0f);  // Top-right vertex
+        glVertex2f(3700.0f, 3600.0f);  // Top-left vertex
+    glEnd();
+
+ // --------------------------------------------------------- //
+                        // foot rest // 
+
+    glColor3f(198.0/255.0f, 108.0/255.0f, 71.0/255.0f);  // orange                 
+    glBegin(GL_POLYGON);  // Start drawing the polygon
+                // l-/r+       u-/d+
+        glVertex2f(3020.0f, 4170.0f);  // Bottom-left vertex
+        glVertex2f(4010.0f, 4350.0f);  // Bottom-right vertex
+        glVertex2f(4020.0f, 4030.0f);  // Top-right vertex
+        glVertex2f(3020.0f, 3880.0f);  // Top-left vertex
+    glEnd();  
+
+// --------------------------------------------------------- //
+                        // Inside right arm rest // 
+    
+    glColor3f((198.0/255.0f) * 0.9f, (108.0/255.0f) * 0.9f, (71.0/255.0f) * 0.9f);  // orange                 
+    glBegin(GL_POLYGON);  // Start drawing the polygon
+                // l-/r+       u-/d+
+        glVertex2f(3956.0f, 3615.0f);  // Bottom-left vertex
+        glVertex2f(4025.0f, 4030.0f);  // Bottom-right vertex
+        glVertex2f(4055.0f, 3600.0f);  // Top-right vertex
+        glVertex2f(3998.0f, 3040.0f);  // Top-left vertex
+
+    glEnd();  
+    
+    // right side lines
+    glLineWidth(2.0f);  // Set line width
+    glBegin(GL_LINES);
+    glColor3f((198.0/255.0f) * 0.80f, (108.0/255.0f) * 0.80f, (71.0/255.0f) * 0.80f);
+        
+        glVertex2f(3998.0, 3040.0);
+        glVertex2f(3956.0, 3615.0);
+
+        glVertex2f(3955.0, 3600.0);
+        glVertex2f(4020.0, 4030.0);
+
+        glVertex2f(3200.0, 3520.0);
+        glVertex2f(3955.0, 3600.0);
+
+        glVertex2f(3020.0, 3880.0);
+        glVertex2f(3210.0, 3520.0);
+
+        glVertex2f(3210.0, 3520.0);
+        glVertex2f(3190.0, 3005.0);
+
+        glVertex2f(4020.0, 4030.0);
+        glVertex2f(4010.0, 4350.0);
+
+        glVertex2f(3020.0, 4170.0);
+        glVertex2f(3020.0, 3880.0);
+
+
+
+    glEnd();
+    
+}
+
+void leftChair2()  {
+
+                // back cushion //
+glColor3f(198.0/255.0f, 108.0/255.0f, 71.0/255.0f);  // orange
+glBegin(GL_POLYGON);  // Start drawing the polygon
+                // l-/r+       u-/d+
+        glVertex2f(1750.0f, 3490.0f);  // Bottom-left vertex
+        glVertex2f(2500.0f, 3490.0f);  // Bottom-right vertex
+        glVertex2f(2500.0f, 2850.0f);  // Top-right vertex
+        glVertex2f(1725.0f, 2850.0f);  // Top-left vertex
+    glEnd();
+// shadow
+glColor3f((198.0/255.0f) * 0.9f, (108.0/255.0f) * 0.9f, (71.0/255.0f) * 0.9f);
+glBegin(GL_POLYGON);  // Start drawing the polygon
+                // l-/r+       u-/d+
+        glVertex2f(1750.0f, 3490.0f);  // Bottom-left vertex
+        glVertex2f(1940.0f, 3490.0f);  // Bottom-right vertex
+        glVertex2f(1750.0f, 3000.0f);  // Top-right vertex
+        glVertex2f(1725.0f, 3000.0f);  // Top-left vertex
+    glEnd();
+ 
+// ------------------------------------------------------------ //
+                // left side of chair //
+    // lower
+    glColor3f(198.0/255.0f, 108.0/255.0f, 71.0/255.0f);  // orange
+    glBegin(GL_POLYGON);  // Start drawing the polygon
+                // l-/r+       u-/d+
+        glVertex2f(1200.0f, 5000.0f);  // Bottom-left vertex
+        glVertex2f(1390.0f, 5000.0f);  // Bottom-right vertex
+        glVertex2f(1390.0f, 3400.0f);  // Top-right vertex
+        glVertex2f(1195.0f, 3400.0f);  // Top-left vertex
+    glEnd();
+    // upper
+    glBegin(GL_POLYGON);  // Start drawing the polygon
+                // l-/r+       u-/d+
+        glVertex2f(1175.0f, 3400.0f);  // Bottom-left vertex
+        glVertex2f(1400.0f, 3400.0f);  // Bottom-right vertex
+        glVertex2f(1750.0f, 2970.0f);  // Top-right vertex
+        glVertex2f(1610.0f, 2975.0f);  // Top-left vertex
+    glEnd();
+    // side
+    glColor3f((198.0/255.0f) * 0.9f, (108.0/255.0f) * 0.9f, (71.0/255.0f) * 0.9f);
+    glBegin(GL_POLYGON);  // Start drawing the polygon
+                // l-/r+       u-/d+
+        glVertex2f(1385.0f, 3830.0f);  // Bottom-left vertex
+        glVertex2f(1750.0f, 3500.0f);  // Bottom-right vertex
+        glVertex2f(1750.0f, 2975.0f);  // Top-right vertex
+        glVertex2f(1385.0f, 3400.0f);  // Top-left vertex
+    glEnd();
+
+    // --------------------------------------------------------- //
+
+                    // right side of chair //
+    glColor3f(198.0/255.0f, 108.0/255.0f, 71.0/255.0f);  // orange
+    // lower
+    glBegin(GL_POLYGON);  // Start drawing the polygon
+                // l-/r+       u-/d+
+        glVertex2f(2290.0f, 5000.0f);  // Bottom-left vertex
+        glVertex2f(2500.0f, 5000.0f);  // Bottom-right vertex
+        glVertex2f(2500.0f, 3400.0f);  // Top-right vertex
+        glVertex2f(2275.0f, 3400.0f);  // Top-left vertex
+    glEnd();
+    // upper
+    glBegin(GL_POLYGON);  // Start drawing the polygon
+                // l-/r+       u-/d+
+        glVertex2f(2275.0f, 3395.0f);  // Bottom-left vertex
+        glVertex2f(2500.0f, 3395.0f);  // Bottom-right vertex
+        glVertex2f(2655.0f, 2950.0f);  // Top-right vertex
+        glVertex2f(2455.0f, 2950.0f);  // Top-left vertex
+    glEnd();
+    // side
+    glColor3f((198.0/255.0f) * 0.95f, (108.0/255.0f) * 0.95f, (71.0/255.0f) * 0.95f);
+    glBegin(GL_POLYGON);  // Start drawing the polygon
+                // l-/r+       u-/d+
+        glVertex2f(2500.0f, 4300.0f);  // Bottom-left vertex
+        glVertex2f(2655.0f, 3650.0f);  // Bottom-right vertex
+        glVertex2f(2655.0f, 2950.0f);  // Top-right vertex
+        glVertex2f(2500.0f, 3395.0f);  // Top-left vertex
+    glEnd();
+
+    // shadow for side
+    glColor3f((198.0/255.0f) * 0.920f, (108.0/255.0f) * 0.920f, (71.0/255.0f) * 0.920f);
+    glBegin(GL_POLYGON);  // Start drawing the polygon
+                // l-/r+       u-/d+
+        glVertex2f(2500.0f, 4300.0f);  // Bottom-left vertex
+        glVertex2f(2655.0f, 3650.0f);  // Bottom-right vertex
+        glVertex2f(2655.0f, 3200.0f);  // Top-right vertex
+        glVertex2f(2500.0f, 3645.0f);  // Top-left vertex
+    glEnd();
+
+    // --------------------------------------------------------- //
+
+                        // butt cushion //
+    glColor3f(198.0/255.0f, 108.0/255.0f, 71.0/255.0f);  // orange
+    glBegin(GL_POLYGON);  // Start drawing the polygon
+                // l-/r+       u-/d+
+        glVertex2f(1375.0f, 3860.0f);  // Bottom-left vertex
+        glVertex2f(2280.0f, 3860.0f);  // Bottom-right vertex
+        glVertex2f(2280.0f, 3490.0f);  // Top-right vertex
+        glVertex2f(1760.0f, 3490.0f);  // Top-left vertex
+    glEnd();
+    // shadow
+    glColor3f((198.0/255.0f) * 0.9f, (108.0/255.0f) * 0.9f, (71.0/255.0f) * 0.9f);
+    glBegin(GL_POLYGON);  // Start drawing the polygon
+                // l-/r+       u-/d+
+        glVertex2f(1370.0f, 3850.0f);  // Bottom-left vertex
+        glVertex2f(1640.0f, 3850.0f);  // Bottom-right vertex
+        glVertex2f(1940.0f, 3490.0f);  // Top-right vertex
+        glVertex2f(1760.0f, 3490.0f);  // Top-left vertex
+    glEnd();
+ 
+ // --------------------------------------------------------- //
+                        // foot rest // 
+    glColor3f(198.0/255.0f, 108.0/255.0f, 71.0/255.0f);  // orange               
+    glBegin(GL_POLYGON);  // Start drawing the polygon
+                // l-/r+       u-/d+
+        glVertex2f(1400.0f, 4150.0f);  // Bottom-left vertex
+        glVertex2f(2280.0f, 4150.0f);  // Bottom-right vertex
+        glVertex2f(2280.0f, 3850.0f);  // Top-right vertex
+        glVertex2f(1400.0f, 3850.0f);  // Top-left vertex
+    glEnd(); 
+    // black space under the foot rest
+    glColor3f(0.0f, 0.0f, 0.0f);
+    glBegin(GL_POLYGON);  // Start drawing the polygon
+                // l-/r+       u-/d+
+        glVertex2f(1390.0f, 5000.0f);  // Bottom-left vertex
+        glVertex2f(2280.0f, 5000.0f);  // Bottom-right vertex
+        glVertex2f(2280.0f, 4150.0f);  // Top-right vertex
+        glVertex2f(1390.0f, 4150.0f);  // Top-left vertex
+    glEnd();
+
+    // left chair - left side - side
+    glLineWidth(2.0f);  // Set line width
+    glColor3f((198.0/255.0f) * 0.80f, (108.0/255.0f) * 0.80f, (71.0/255.0f) * 0.80f);
+    glBegin(GL_LINES);
+        // l-/r+       u-/d+
+    glVertex2f(1390.0, 3850.0);
+    glVertex2f(1750.0, 3500.0);
+    glEnd();
+
+    glBegin(GL_LINES);
+    glLineWidth(2.0f);  // Set line width
+    glVertex2f(1740.0, 2975.0);
+    glVertex2f(1740.0, 3500.0);
+
+    glVertex2f(1740.0, 3500.0);
+    glVertex2f(2275.0, 3500.0);
+
+    glVertex2f(1395.0, 3850.0);
+    glVertex2f(1395.0, 4150.0);
+
+    glVertex2f(2275.0, 3850.0);
+    glVertex2f(2275.0, 4150.0);
+
+    glEnd();   
+
+}
 // right chair
 void rightChair() {
 
@@ -1227,8 +1535,8 @@ void renderLines() {
     drawCeiling();
     drawFloor();
     drawTV();
-    leftChair();
-    rightChair();
+    leftChair2();
+    rightChair2();
     rightWallSocket();
     drawPanel();
     drawBookshelf();
